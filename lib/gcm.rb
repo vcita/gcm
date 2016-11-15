@@ -174,6 +174,6 @@ class GCM
   end
 
   def is_not_registered?(result)
-    result['error'] == 'NotRegistered'
+    result['error'] == 'NotRegistered' || result['error'] == 'InvalidRegistration'
   end
 end
